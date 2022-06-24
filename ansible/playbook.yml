@@ -35,7 +35,7 @@
       state: present
 
   - name: run initdb script
-    #run_once: true
+    run_once: true
     shell: cd /home/bootcamp-app && npm run initdb
     register: initdb
     tags:
